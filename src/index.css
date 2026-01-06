@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .slide-container {
+    @apply max-w-7xl mx-auto px-8 py-16 min-h-screen flex flex-col;
+  }
+  
+  .slide-title {
+    @apply text-4xl font-bold text-primary;
+  }
+  
+  .material-image {
+    @apply max-h-[500px] w-auto object-contain shadow-xl rounded-lg;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: #1e3a8a;
+  }
+  
+  .bg-primary {
+    background-color: #1e3a8a;
+  }
+  
+  .text-accent {
+    color: #d97706;
+  }
+  
+  .bg-accent {
+    background-color: #d97706;
+  }
+}
