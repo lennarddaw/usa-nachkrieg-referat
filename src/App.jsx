@@ -21,10 +21,13 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-white">
       <ProgressBar current={currentSlide + 1} total={totalSlides} />
       
-      <Slide slideData={slidesData[currentSlide]} />
+      {/* Padding-top für Header */}
+      <div className="pt-20">
+        <Slide slideData={slidesData[currentSlide]} />
+      </div>
       
       <Navigation
         currentSlide={currentSlide}

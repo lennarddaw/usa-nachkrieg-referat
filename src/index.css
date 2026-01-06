@@ -4,38 +4,151 @@
 
 @layer base {
   body {
-    @apply antialiased;
+    @apply antialiased bg-white;
+  }
+  
+  * {
+    @apply transition-colors duration-200;
   }
 }
 
 @layer components {
-  .slide-container {
-    @apply max-w-7xl mx-auto px-8 py-16 min-h-screen flex flex-col;
+  /* Container für große Displays/Beamer */
+  .slide-container-large {
+    @apply max-w-[1600px] mx-auto px-16 py-20 min-h-screen flex flex-col;
   }
   
-  .slide-title {
-    @apply text-4xl font-bold text-primary;
+  /* Große Titel für Beamer */
+  .slide-title-large {
+    @apply text-6xl font-bold leading-tight;
   }
   
-  .material-image {
-    @apply max-h-[500px] w-auto object-contain shadow-xl rounded-lg;
+  /* Farbige Akzente */
+  .accent-blue {
+    @apply text-blue-800;
+  }
+  
+  .accent-gold {
+    @apply text-amber-700;
+  }
+  
+  .accent-red {
+    @apply text-red-800;
+  }
+  
+  .bg-blue-soft {
+    @apply bg-blue-50;
+  }
+  
+  .bg-gold-soft {
+    @apply bg-amber-50;
+  }
+  
+  .bg-red-soft {
+    @apply bg-red-50;
+  }
+  
+  /* Hover-Effekte */
+  .card-hover {
+    @apply hover:shadow-2xl hover:scale-[1.02] transition-all duration-300;
+  }
+  
+  /* Responsive Bilder */
+  .responsive-image {
+    @apply w-full h-auto object-contain rounded-lg shadow-xl;
   }
 }
 
 @layer utilities {
-  .text-primary {
-    color: #1e3a8a;
+  /* Farbschema */
+  .text-primary-blue {
+    color: #1e40af;
   }
   
-  .bg-primary {
-    background-color: #1e3a8a;
+  .text-primary-gold {
+    color: #b45309;
   }
   
-  .text-accent {
-    color: #d97706;
+  .text-primary-red {
+    color: #991b1b;
   }
   
-  .bg-accent {
-    background-color: #d97706;
+  .bg-primary-blue {
+    background-color: #1e40af;
+  }
+  
+  .bg-primary-gold {
+    background-color: #b45309;
+  }
+  
+  .bg-primary-red {
+    background-color: #991b1b;
+  }
+  
+  /* Textschatten für bessere Lesbarkeit auf Beamer */
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Animationen */
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Gradient Backgrounds */
+  .gradient-blue {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  }
+  
+  .gradient-gold {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  }
+  
+  .gradient-red {
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .slide-container-large {
+    @apply break-after-page;
+  }
+  
+  button, .navigation {
+    @apply hidden;
+  }
+}
+
+/* Beamer-optimierte Schriftgrößen */
+@media (min-width: 1024px) {
+  .slide-title-large {
+    @apply text-7xl;
+  }
+}
+
+/* Sehr große Displays (Projektor) */
+@media (min-width: 1920px) {
+  .slide-container-large {
+    @apply max-w-[1800px] px-20 py-24;
+  }
+  
+  .slide-title-large {
+    @apply text-8xl;
   }
 }
