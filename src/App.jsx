@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Navigation from './components/Navigation';
-import ProgressBar from './components/ProgressBar';
 import Slide from './components/Slide';
 import { slidesData } from './data/slidesData';
 
@@ -22,12 +21,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      <ProgressBar current={currentSlide + 1} total={totalSlides} />
-      
-      {/* Padding-top für Header */}
-      <div className="pt-20">
-        <Slide slideData={slidesData[currentSlide]} />
-      </div>
+      <Slide slideData={slidesData[currentSlide]} />
       
       <Navigation
         currentSlide={currentSlide}

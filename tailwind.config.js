@@ -7,8 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#1e3a8a',
-        accent: '#d97706',
+        crail: {
+          DEFAULT: '#C15F3C',
+          dark: '#A54D2F',
+        },
+        cloudy: '#B1ADA1',
+        pampas: '#F4F3EE',
       },
     },
   },

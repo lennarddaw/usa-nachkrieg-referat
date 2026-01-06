@@ -6,8 +6,7 @@ export const slidesData = [
     title: 'Die USA als weltpolitischer Akteur',
     subtitle: 'nach dem Zweiten Weltkrieg (1945-1955)',
     authors: ['Referent A', 'Referent B', 'Referent C'],
-    course: 'Geschichte LK Q12',
-    color: 'blue'
+    course: 'Geschichte LK Q12'
   },
 
   // S1 - Ausgangslage mit Truman Portrait
@@ -23,27 +22,26 @@ export const slidesData = [
         points: [
           'Größte Militärmacht der Welt',
           'Atomwaffenmonopol (bis 1949)',
-          'Weltweite Militärbasen und Truppenstationierung'
+          'Weltweite Militärbasen'
         ]
       },
       {
         subtitle: 'Wirtschaftliche Stärke',
         points: [
-          'Intakte Industrie im Gegensatz zu Europa',
-          'Stärkste Wirtschaftsmacht global',
-          'Produktionskapazität massiv ausgebaut'
+          'Intakte Industrie',
+          'Stärkste Wirtschaftsmacht',
+          'Massive Produktionskapazität'
         ]
       },
       {
         subtitle: 'Politischer Führungsanspruch',
         points: [
-          'Mission: Demokratie und Marktwirtschaft verbreiten',
-          'Moralische Legitimation als Siegermacht',
-          'Hegemoniale Stellung im demokratischen Westen'
+          'Mission: Demokratie verbreiten',
+          'Moralische Legitimation',
+          'Hegemoniale Stellung'
         ]
       }
-    ],
-    color: 'blue'
+    ]
   },
 
   // S2 - UNO-Gründung mit Text
@@ -58,12 +56,11 @@ export const slidesData = [
       author: 'Franklin D. Roosevelt, 20. Januar 1945'
     },
     sidePoints: [
-      'USA übernahmen Führungsrolle bei UN-Gründung',
-      'Sicherheitsrat mit permanenten Mitgliedern',
-      'US-Vetorecht sichert Einfluss',
-      'UN-Hauptsitz in New York'
-    ],
-    color: 'gold'
+      'USA übernahmen Führungsrolle',
+      'Sicherheitsrat mit Vetorecht',
+      'UN-Hauptsitz in New York',
+      'Charta-Ziele: Weltfrieden'
+    ]
   },
 
   // S3 - Uncle Sam Poster
@@ -76,24 +73,23 @@ export const slidesData = [
     imageCaption: 'US-Rekrutierungsanzeige „I need you again", 1948',
     content: [
       {
-        subtitle: 'Kernbotschaft des Posters',
+        subtitle: 'Kernbotschaft',
         points: [
-          '„Your Army and Air Force serve the nation and mankind in war and peace"',
-          'Militärdienst wird als Friedensmission legitimiert',
-          'USA als Beschützer von Freiheit und Demokratie weltweit'
+          'Militärdienst als Friedensmission',
+          'USA als Beschützer der Freiheit',
+          'Weltweite Verantwortung'
         ]
       },
       {
         subtitle: 'Ideologische Grundlagen',
         points: [
-          'USA sehen sich als „Force for Peace"',
-          'Moralische Überlegenheit gegenüber Totalitarismus',
-          'Religiös geprägte Auserwähltheitsrhetorik',
-          'Weltpolizist im Dienste der freien Welt'
+          'USA als „Force for Peace"',
+          'Moralische Überlegenheit',
+          'Religiös geprägte Rhetorik',
+          'Weltpolizist im Dienste der Freiheit'
         ]
       }
-    ],
-    color: 'red'
+    ]
   },
 
   // S4 - Truman UN-Zitat
@@ -105,15 +101,14 @@ export const slidesData = [
     mainText: `Es ist richtig, dass manche Staaten aus diesem Konflikt mächtig und gut ausgerüstet hervorgegangen sind; aber sie haben kein Recht zur Beherrschung der Welt. Es ist vielmehr die Pflicht dieser mächtigen Staaten, die verantwortliche Führung auf dem Wege zum Weltfrieden zu übernehmen. Darum haben wir hier beschlossen, dass Macht und Kraft nicht zur Kriegführung benutzt werden, sondern dazu dienen sollen, die Welt friedlich und frei von jeder Kriegsfurcht zu erhalten.`,
     quote: {
       text: 'Durch ihr eigenes Beispiel sollen die starken Nationen auf dem Wege zur internationalen Gerechtigkeit als Führer wirken.',
-      author: 'Archiv der Gegenwart, 27. Juni 1945, S. 298'
+      author: 'Archiv der Gegenwart, 27. Juni 1945'
     },
     sidePoints: [
-      'Unterscheidung: „Führung" vs. „Beherrschung"',
+      '„Führung" vs. „Beherrschung"',
       'Legitimation durch Verantwortung',
       'Macht als Mittel für Frieden',
-      'USA als moralische Führungsmacht'
-    ],
-    color: 'blue'
+      'Moralische Führungsmacht'
+    ]
   },
 
   // S5 - Truman-Doktrin
@@ -122,15 +117,14 @@ export const slidesData = [
     type: 'text-focus',
     title: 'Die Truman-Doktrin',
     subtitle: 'Rede vor dem US-Kongress, 12. März 1947',
-    mainText: `Im gegenwärtigen Zeitpunkt der Weltgeschichte muss fast jede Nation zwischen alternativen Lebensformen wählen. Nur allzu oft ist diese Wahl nicht frei. Die eine Lebensform gründet sich auf den Willen der Mehrheit und ist gekennzeichnet durch freie Institutionen, repräsentative Regierungsform, freie Wahlen, Garantien für die persönliche Freiheit, Rede- und Religionsfreiheit und Freiheit von politischer Unterdrückung.`,
-    secondaryText: `Die andere Lebensform gründet sich auf den Willen einer Minderheit, den diese der Mehrheit gewaltsam aufzwingt. Sie stützt sich auf Terror und Unterdrückung, auf die Zensur von Presse und Rundfunk, auf manipulierte Wahlen und auf die Zensur von Presse und Rundfunk, auf manipulierte Wahlen und auf die Unterdrückung persönlicher Freiheiten.`,
+    mainText: `Im gegenwärtigen Zeitpunkt der Weltgeschichte muss fast jede Nation zwischen alternativen Lebensformen wählen. Die eine Lebensform gründet sich auf den Willen der Mehrheit und ist gekennzeichnet durch freie Institutionen, repräsentative Regierungsform, freie Wahlen, Garantien für die persönliche Freiheit, Rede- und Religionsfreiheit.`,
+    secondaryText: `Die andere Lebensform gründet sich auf den Willen einer Minderheit, den diese der Mehrheit gewaltsam aufzwingt. Sie stützt sich auf Terror und Unterdrückung, auf die Zensur von Presse und Rundfunk und auf die Unterdrückung persönlicher Freiheiten.`,
     sidePoints: [
-      'Zwei unvereinbare „Lebensformen"',
+      'Zwei unvereinbare Systeme',
       'Freiheit vs. Unterdrückung',
-      'Containment-Politik: Eindämmung des Kommunismus',
-      'Beistand für „freie Völker" (wirtschaftlich/militärisch)'
-    ],
-    color: 'red'
+      'Containment-Politik',
+      'Beistand für freie Völker'
+    ]
   },
 
   // S6 - Marshall-Plan
@@ -141,17 +135,15 @@ export const slidesData = [
     subtitle: 'George C. Marshall an der Universität Harvard, 5. Juni 1947',
     mainText: `Unsere Politik richtet sich nicht gegen irgendein Land oder eine Anschauung, sondern gegen Hunger, Armut, Verzweiflung und Chaos. Ihr Ziel ist die Wiederbelebung einer leistungsfähigen Weltwirtschaft, die das Entstehen politischer und sozialer Zustände, in denen freiheitliche Einrichtungen gedeihen können, ermöglichen soll.`,
     quote: {
-      text: 'Ich bin davon überzeugt, dass eine solche Hilfe nicht von Fall zu Fall, je nachdem sich Krisen entwickeln, gegeben werden sollte. Jede Hilfe, die unsere Regierung in Zukunft gewähren mag, sollte Heilung und nicht bloß Linderung bringen.',
+      text: 'Ich bin davon überzeugt, dass eine solche Hilfe nicht von Fall zu Fall gegeben werden sollte. Jede Hilfe sollte Heilung und nicht bloß Linderung bringen.',
       author: 'George C. Marshall, Harvard, 5. Juni 1947'
     },
     sidePoints: [
-      'European Recovery Program (ERP)',
-      'Wiederaufbau gegen Chaos und Extremismus',
-      'Wirtschaftsstabilität → Politische Stabilität',
-      'UdSSR verbot Satellitenstaaten Teilnahme',
-      'Vertiefung der europäischen Spaltung'
-    ],
-    color: 'gold'
+      'European Recovery Program',
+      'Wiederaufbau gegen Chaos',
+      'Wirtschaft → Politische Stabilität',
+      'Vertiefung der Spaltung'
+    ]
   },
 
   // S7 - Blockbildung Karte
@@ -166,32 +158,29 @@ export const slidesData = [
       {
         subtitle: 'Westblock (USA)',
         points: [
-          'NATO (1949): Nordatlantikpakt-Organisation',
-          'Brüsseler Vertrag (1948) als Vorläufer',
-          'Integration Westeuropas unter US-Führung',
-          'Weltweite Stützpunkte und Bündnissysteme'
+          'NATO (1949)',
+          'Integration Westeuropas',
+          'Weltweite Stützpunkte'
         ]
       },
       {
         subtitle: 'Ostblock (UdSSR)',
         points: [
-          'Warschauer Pakt (1955) als Gegenbündnis',
-          'Sowjetische Satellitenstaaten in Osteuropa',
-          'Kommunistische Staaten in Asien',
-          'Militärische Beistandsabkommen'
+          'Warschauer Pakt (1955)',
+          'Sowjetische Satellitenstaaten',
+          'Kommunistische Staaten Asiens'
         ]
       },
       {
         subtitle: 'Globale Dimension',
         points: [
-          'Kalter Krieg wird weltweites System',
-          'Stellvertreterkriege (Korea 1950-53)',
-          'Permanente Abschreckung und Aufrüstung',
-          'Bipolare Machtstruktur bis 1989'
+          'Kalter Krieg als globales System',
+          'Stellvertreterkriege',
+          'Permanente Abschreckung',
+          'Bipolare Struktur bis 1989'
         ]
       }
-    ],
-    color: 'blue'
+    ]
   },
 
   // S8 - Schlussfolie
@@ -211,13 +200,12 @@ export const slidesData = [
       },
       {
         title: 'Containment',
-        text: 'Truman-Doktrin und Marshall-Plan als Instrumente der Eindämmungspolitik gegen sowjetische Expansion'
+        text: 'Truman-Doktrin und Marshall-Plan als Instrumente gegen sowjetische Expansion'
       },
       {
         title: 'Blockbildung',
-        text: 'NATO (1949) und Warschauer Pakt (1955) zementierten die bipolare Weltordnung des Kalten Krieges'
+        text: 'NATO und Warschauer Pakt zementierten die bipolare Weltordnung des Kalten Krieges'
       }
-    ],
-    color: 'gold'
+    ]
   }
 ];
