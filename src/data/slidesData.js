@@ -48,7 +48,7 @@ export const slidesData = [
     id: 'S3',
     type: 'material',
     title: 'US-Führungsanspruch in der UNO',
-    image: '/assets/M4_truman_un_quote.png',
+    image: '/assets/M4_truman_un_quote.jpg',
     caption: 'Truman zur Unterzeichnung der UN-Charta, 26. Juni 1945',
     notes: [
       'Führung durch Verantwortung, nicht Herrschaft',
@@ -63,11 +63,11 @@ export const slidesData = [
     title: 'Containment-Politik',
     images: [
       {
-        src: '/assets/M5_truman_doctrine_excerpt.png',
+        src: '/assets/M5_truman_doctrine_excerpt.jpg',
         caption: 'Truman-Doktrin, 12. März 1947'
       },
       {
-        src: '/assets/M6_marshall_harvard_excerpt.png',
+        src: '/assets/M6_marshall_harvard_excerpt.jpg',
         caption: 'Marshall-Rede, Harvard, 5. Juni 1947'
       }
     ],
@@ -82,7 +82,7 @@ export const slidesData = [
     id: 'S5',
     type: 'material',
     title: 'Bipolare Weltordnung',
-    image: '/assets/M7_bloc_map.png',
+    image: '/assets/M7_bloc_map.jpg',
     caption: 'Militärische Blockbildung im Ost-West-Konflikt',
     notes: [
       'NATO (1949) vs. Warschauer Pakt (1955)',
