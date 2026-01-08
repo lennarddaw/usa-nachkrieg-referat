@@ -29,6 +29,15 @@ export default function Slide({ slideData }) {
   if (type === 'image-with-text') {
     return (
       <div className="slide-full-screen">
+        {/* Material-Label */}
+        {slideData.materialLabel && (
+          <div className="mb-4 md:mb-6">
+            <span className="inline-block bg-crail text-white px-4 py-2 rounded-lg text-2xl sm:text-3xl md:text-4xl font-bold">
+              {slideData.materialLabel}
+            </span>
+          </div>
+        )}
+
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-crail mb-2 md:mb-3">
           {slideData.title}
         </h2>
@@ -91,6 +100,15 @@ export default function Slide({ slideData }) {
   if (type === 'text-focus') {
     return (
       <div className="slide-full-screen">
+        {/* Material-Label */}
+        {slideData.materialLabel && (
+          <div className="mb-4 md:mb-6">
+            <span className="inline-block bg-crail text-white px-4 py-2 rounded-lg text-2xl sm:text-3xl md:text-4xl font-bold">
+              {slideData.materialLabel}
+            </span>
+          </div>
+        )}
+
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-crail mb-2 md:mb-3">
           {slideData.title}
         </h2>

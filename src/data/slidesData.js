@@ -1,5 +1,7 @@
 export const slidesData = [
-  // S0 - Titelfolie
+  // ============================================================================
+  // S0 - TITELFOLIE
+  // ============================================================================
   {
     id: 'S0',
     type: 'title',
@@ -9,10 +11,13 @@ export const slidesData = [
     course: ''
   },
 
-  // S1 - Ausgangslage mit Truman Portrait
+  // ============================================================================
+  // S1 - AUSGANGSLAGE 1945 (M1: Truman Portrait)
+  // ============================================================================
   {
     id: 'S1',
     type: 'image-with-text',
+    materialLabel: 'M1',
     title: 'Ausgangslage 1945: Die USA als neue Supermacht',
     image: '/assets/M1_truman_1945.jpg',
     imageCaption: 'Harry S. Truman, US-Präsident 1945-1952',
@@ -46,28 +51,13 @@ export const slidesData = [
     textSource: 'Quelle: Buchner Kolleg Geschichte, S. 58-59'
   },
 
-  // S2 - UNO-Gründung mit Text und Bild
-  {
-    id: 'S2',
-    type: 'text-focus',
-    title: 'Die Gründung der Vereinten Nationen (UNO)',
-    subtitle: '26. Juni 1945, San Francisco',
-    additionalImage: '/assets/UN-Charter Unterzeichnung 1945.jpg',
-    additionalImageCaption: 'Unterzeichnung der UN-Charta, San Francisco, 26. Juni 1945',
-    mainText: `Die amerikanischen Ideale mit der Garantie der Menschenrechte zeigten sich auch bei Gründung der UNO im Jahr 1945. Gemäß der Charta der Vereinten Nationen verpflichten sich alle Mitglieder zur Sicherung des Weltfriedens, zum Schutz der Menschenrechte, zur Wahrung der Gleichberechtigung aller Völker und zur Verbesserung des Lebensstandards in der Welt.`,
-    sidePoints: [
-      'USA übernahmen Führungsrolle bei UN-Gründung',
-      'Sicherheitsrat mit permanenten Mitgliedern',
-      'US-Vetorecht sichert Einfluss',
-      'UN-Hauptsitz in New York'
-    ],
-    textSource: 'Quelle: Buchner Kolleg Geschichte, S. 58-59, M2',
-  },
-
-  // S3 - Uncle Sam Poster
+  // ============================================================================
+  // S3 - UNCLE SAM POSTER (M3: Bild)
+  // ============================================================================
   {
     id: 'S3',
     type: 'image-with-text',
+    materialLabel: 'M3',
     title: 'Das Selbstverständnis der USA',
     subtitle: 'Mission und moralischer Führungsanspruch',
     image: '/assets/M3_uncle_sam_1948.jpg',
@@ -95,48 +85,81 @@ export const slidesData = [
     textSource: 'Quelle: Buchner Kolleg Geschichte, S. 60'
   },
 
-  // S4 - Truman UN-Zitat mit Bild
+  // ============================================================================
+  // S2 - UNO-GRÜNDUNG (M2: Text)
+  // ============================================================================
+  {
+    id: 'S2',
+    type: 'text-focus',
+    materialLabel: 'M2',
+    title: 'Die Gründung der Vereinten Nationen (UNO)',
+    subtitle: '26. Juni 1945, San Francisco',
+    mainText: `Die amerikanischen Ideale mit der Garantie der Menschenrechte zeigten sich auch bei Gründung der UNO im Jahr 1945. Gemäß der Charta der Vereinten Nationen verpflichten sich alle Mitglieder zur Sicherung des Weltfriedens, zum Schutz der Menschenrechte, zur Wahrung der Gleichberechtigung aller Völker und zur Verbesserung des Lebensstandards in der Welt.`,
+    additionalImage: '/assets/UN-Charter_Unterzeichnung_1945.jpg',
+    additionalImageCaption: 'Unterzeichnung der UN-Charta, San Francisco, 26. Juni 1945',
+    sidePoints: [
+      'USA übernahmen Führungsrolle bei UN-Gründung',
+      'Sicherheitsrat mit permanenten Mitgliedern',
+      'US-Vetorecht sichert Einfluss',
+      'UN-Hauptsitz in New York'
+    ],
+    textSource: 'Quelle: Buchner Kolleg Geschichte, S. 58-59, M2'
+  },
+
+  // ============================================================================
+  // S4 - TRUMAN UN-ZITAT (M4: Text)
+  // ============================================================================
   {
     id: 'S4',
     type: 'text-focus',
+    materialLabel: 'M4',
     title: 'US-Führungsanspruch in den Vereinten Nationen',
     subtitle: 'Truman zur Unterzeichnung der UN-Charta, 26. Juni 1945',
     mainText: `Es ist richtig, dass manche Staaten aus diesem Konflikt mächtig und gut ausgerüstet hervorgegangen sind; aber sie haben kein Recht zur Beherrschung der Welt. Es ist vielmehr die Pflicht dieser mächtigen Staaten, die verantwortliche Führung auf dem Wege zum Weltfrieden zu übernehmen. Darum haben wir hier beschlossen, dass Macht und Kraft nicht zur Kriegführung benutzt werden, sondern dazu dienen sollen, die Welt friedlich und frei von jeder Kriegsfurcht zu erhalten.`,
+    additionalImage: '/assets/Truman_bei_UN-Rede.jpg',
+    additionalImageCaption: 'Präsident Truman bei Rede vor dem US-Kongress',
     sidePoints: [
       'Unterscheidung: „Führung" vs. „Beherrschung"',
       'Legitimation durch Verantwortung statt Macht',
       'Macht als Mittel für Frieden, nicht Krieg',
       'USA als moralische Führungsmacht'
     ],
-    textSource: 'Quelle: Buchner Kolleg Geschichte, S. 59, M4',
-    additionalImage: '/assets/Truman bei UN-Rede.jpg',
-    additionalImageCaption: 'Präsident Truman bei Rede vor dem US-Kongress'
+    textSource: 'Quelle: Buchner Kolleg Geschichte, S. 59, M4'
   },
 
-  // S5 - Truman-Doktrin (Platzhalter bleibt)
+  // ============================================================================
+  // S5 - TRUMAN-DOKTRIN (M5: Text)
+  // ============================================================================
   {
     id: 'S5',
     type: 'text-focus',
+    materialLabel: 'M5',
     title: 'Die Truman-Doktrin',
     subtitle: 'Rede vor dem US-Kongress, 12. März 1947',
-    mainText: `Im gegenwärtigen Zeitpunkt der Weltgeschichte muss fast jede Nation zwischen alternativen Lebensformen wählen. Nur allzu oft ist diese Wahl nicht frei. Die eine Lebensform gründet sich auf den Willen der Mehrheit und ist gekennzeichnet durch freie Institutionen, repräsentative Regierungsform, freie Wahlen, Garantien für die persönliche Freiheit, Rede- und Religionsfreiheit und Freiheit von politischer Unterdrückung.Die andere Lebensform gründet sich auf den Willen einer Minderheit, den diese der Mehrheit gewaltsam aufzwingt. Sie stützt sich auf Terror und Unterdrückung, auf die Zensur von Presse und Rundfunk, auf manipulierte Wahlen und auf die Unterdrückung persönlicher Freiheiten.`,
+    mainText: `Im gegenwärtigen Zeitpunkt der Weltgeschichte muss fast jede Nation zwischen alternativen Lebensformen wählen. Nur allzu oft ist diese Wahl nicht frei. Die eine Lebensform gründet sich auf den Willen der Mehrheit und ist gekennzeichnet durch freie Institutionen, repräsentative Regierungsform, freie Wahlen, Garantien für die persönliche Freiheit, Rede- und Religionsfreiheit und Freiheit von politischer Unterdrückung. Die andere Lebensform gründet sich auf den Willen einer Minderheit, den diese der Mehrheit gewaltsam aufzwingt. Sie stützt sich auf Terror und Unterdrückung, auf die Zensur von Presse und Rundfunk, auf manipulierte Wahlen und auf die Unterdrückung persönlicher Freiheiten.`,
+    additionalImage: '/assets/M7_bloc_map.jpg',
+    additionalImageCaption: 'Karte: Militärische Blockbildung im Kalten Krieg',
     sidePoints: [
       'Zwei unvereinbare politische Systeme',
       'Freiheit und Demokratie vs. Terror und Unterdrückung',
       'Containment-Politik: Eindämmung des Kommunismus',
       'Wirtschaftlicher und militärischer Beistand für freie Völker'
     ],
-    textSource: 'Quelle: Buchner Kolleg Geschichte, S. 60-61, M5',
-    additionalImage: '/assets/M7_bloc_map.jpg',
+    textSource: 'Quelle: Buchner Kolleg Geschichte, S. 60-61, M5'
   },
 
-  // S6 - Marshall-Plan mit Bild
+  // ============================================================================
+  // S6 - MARSHALL-PLAN (M6: Text)
+  // ============================================================================
   {
     id: 'S6',
     type: 'text-focus',
+    materialLabel: 'M6',
     title: 'Der Marshall-Plan',
     subtitle: 'George C. Marshall an der Universität Harvard, 5. Juni 1947',
     mainText: `Unsere Politik richtet sich nicht gegen irgendein Land oder eine Anschauung, sondern gegen Hunger, Armut, Verzweiflung und Chaos. Ihr Ziel ist die Wiederbelebung einer leistungsfähigen Weltwirtschaft, die das Entstehen politischer und sozialer Zustände, in denen freiheitliche Einrichtungen gedeihen können, ermöglichen soll.`,
+    additionalImage: '/assets/Marshall-Plan_Plakat.jpg',
+    additionalImageCaption: 'Marshall-Plan Propaganda-Plakat „Freie Bahn dem Marshallplan"',
     sidePoints: [
       'European Recovery Program (ERP)',
       'Wiederaufbau Europas gegen Chaos und Extremismus',
@@ -144,15 +167,16 @@ export const slidesData = [
       'UdSSR verbot Satellitenstaaten die Teilnahme',
       'Vertiefung der europäischen Spaltung'
     ],
-    textSource: 'Quelle: Buchner Kolleg Geschichte, S. 61, M6',
-    additionalImage: '/assets/Marshall-Plan Plakat.jpg',
-    additionalImageCaption: 'Marshall-Plan Propaganda-Plakat „Freie Bahn dem Marshallplan"'
+    textSource: 'Quelle: Buchner Kolleg Geschichte, S. 61, M6'
   },
 
-  // S7 - Blockbildung Karte
+  // ============================================================================
+  // S7 - BLOCKBILDUNG (M7: Karte)
+  // ============================================================================
   {
     id: 'S7',
     type: 'image-with-text',
+    materialLabel: 'M7',
     title: 'Bipolare Weltordnung: Die militärische Blockbildung',
     subtitle: 'Ost-West-Konflikt 1945-1955',
     image: '/assets/M7_bloc_map.jpg',
@@ -187,30 +211,4 @@ export const slidesData = [
     ],
     textSource: 'Quelle: Buchner Kolleg Geschichte, S. 61'
   },
-
-  // S8 - Schlussfolie
-  {
-    id: 'S8',
-    type: 'conclusion',
-    title: 'Die USA als weltpolitischer Akteur',
-    subtitle: 'Von der Siegermacht zur Führungsmacht der bipolaren Weltordnung',
-    keyPoints: [
-      {
-        title: 'Selbstverständnis',
-        text: 'USA definierten sich als moralische Führungsmacht mit der Mission, Demokratie und Freiheit zu verteidigen'
-      },
-      {
-        title: 'Institutionalisierung',
-        text: 'UNO-Gründung sicherte US-Einfluss durch Sicherheitsrat und Vetorecht'
-      },
-      {
-        title: 'Containment',
-        text: 'Truman-Doktrin und Marshall-Plan als Instrumente der Eindämmungspolitik gegen sowjetische Expansion'
-      },
-      {
-        title: 'Blockbildung',
-        text: 'NATO (1949) und Warschauer Pakt (1955) zementierten die bipolare Weltordnung des Kalten Krieges'
-      }
-    ]
-  }
 ];
