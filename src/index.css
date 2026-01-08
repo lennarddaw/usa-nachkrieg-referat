@@ -5,26 +5,59 @@
 @layer base {
   body {
     @apply antialiased bg-white;
-    overflow: hidden; /* Kein Scrollen */
   }
   
   html, body, #root {
-    height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    /* Mobile: Scrollen erlaubt, Desktop: kein Scrollen */
+    @apply md:h-screen md:overflow-hidden;
   }
   
-  /* Größere Base-Schrift für bessere Lesbarkeit */
+  /* Responsive Base-Schrift */
   html {
-    font-size: 18px; /* Erhöht von Standard 16px */
+    font-size: 14px; /* Mobile */
+  }
+  
+  @media (min-width: 640px) {
+    html {
+      font-size: 16px; /* Tablet */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px; /* Desktop */
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    html {
+      font-size: 20px; /* Large Desktop/Beamer */
+    }
   }
 }
 
 @layer components {
-  /* Full-Screen Container - Kein Scrollen */
+  /* Full-Screen Container - Responsive */
   .slide-full-screen {
-    @apply w-full h-screen flex flex-col px-20 py-10;
-    overflow: hidden;
+    @apply w-full flex flex-col;
+    
+    /* Mobile: Padding klein, Scrollen erlaubt */
+    @apply px-4 py-6;
+    min-height: 100vh;
+    
+    /* Tablet */
+    @apply sm:px-8 sm:py-8;
+    
+    /* Desktop */
+    @apply md:px-12 md:py-10;
+    
+    /* Large Desktop */
+    @apply lg:px-16 lg:py-10;
+    @apply lg:h-screen lg:overflow-hidden;
+    
+    /* Beamer */
+    @apply xl:px-20;
   }
   
   /* Claude Color Classes */
@@ -72,9 +105,9 @@
 }
 
 @layer utilities {
-  /* Prevent any scrolling */
-  .no-scroll {
-    overflow: hidden !important;
+  /* Mobile: Scrollen erlaubt */
+  .overflow-y-mobile {
+    @apply overflow-y-auto lg:overflow-y-hidden;
   }
   
   /* Text shadows for readability on beamer */
@@ -107,6 +140,44 @@ kbd {
   font-size: 0.875rem;
 }
 
+/* Touch-friendly links and buttons */
+@media (max-width: 1024px) {
+  button, a {
+    min-height: 44px; /* iOS recommended touch target */
+    min-width: 44px;
+  }
+}
+
+/* Prevent text selection on mobile swipe */
+@media (max-width: 1024px) {
+  body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+  
+  /* Allow text selection in content boxes */
+  .bg-pampas, .bg-white {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+}
+
+/* Mobile: Smooth scrolling */
+@media (max-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .slide-full-screen {
+    scroll-behavior: smooth;
+  }
+}
+
 /* Print styles */
 @media print {
   .slide-full-screen {
@@ -116,15 +187,55 @@ kbd {
   .fixed {
     @apply hidden;
   }
+  
+  body {
+    overflow: visible !important;
+  }
 }
 
-/* Beamer optimization - extra große Schriften für große Displays */
-@media (min-width: 1920px) {
-  html {
-    font-size: 20px;
+/* Landscape mode on mobile - optimize layout */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .slide-full-screen {
+    @apply py-4;
   }
   
-  .slide-full-screen {
-    @apply px-24 py-12;
+  img {
+    max-height: 50vh !important;
+  }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  /* Uncomment if you want dark mode support
+  body {
+    @apply bg-gray-900 text-white;
+  }
+  
+  .bg-white {
+    @apply bg-gray-800;
+  }
+  
+  .bg-pampas {
+    @apply bg-gray-700;
+  }
+  */
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .text-crail {
+    color: #A54D2F; /* Darker for better contrast */
+  }
+  
+  .border-crail {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
   }
 }
